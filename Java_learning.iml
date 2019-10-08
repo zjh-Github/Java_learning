@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/安装包/poi-bin-4.1.0-20190412/poi-4.1.0/poi-4.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/安装包/poi-bin-4.1.0-20190412/poi-4.1.0/poi-ooxml-4.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/安装包/poi-bin-4.1.0-20190412/poi-4.1.0/poi-ooxml-schemas-4.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/rxjava-2.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <ANNOTATIONS>
+          <root url="file://D:/vert.x-3.8.0-full/vertx" />
+        </ANNOTATIONS>
+        <CLASSES>
+          <root url="file://D:/vert.x-3.8.0-full/vertx" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://D:/vert.x-3.8.0-full/vertx" />
+        </JAVADOC>
+        <NATIVE>
+          <root url="file://D:/vert.x-3.8.0-full/vertx" />
+        </NATIVE>
+        <SOURCES>
+          <root url="file://D:/vert.x-3.8.0-full/vertx" />
+        </SOURCES>
+        <jarDirectory url="file://D:/vert.x-3.8.0-full/vertx" recursive="false" />
+        <jarDirectory url="file://D:/vert.x-3.8.0-full/vertx" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+  </component>
+</module>
