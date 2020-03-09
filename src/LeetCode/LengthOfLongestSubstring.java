@@ -1,11 +1,10 @@
 package LeetCode;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.*;
 
 public class LengthOfLongestSubstring {
     public static void main(String[] args) {
-        System.out.println(lengthOfLongestSubstring("pwwkew"));
+        System.out.println(lengthOfLongestSubstring2("bbbbbbbbbbbb"));
     }
 
     public static int lengthOfLongestSubstring(String s) {
@@ -57,29 +56,23 @@ public class LengthOfLongestSubstring {
     }
 
     public static int lengthOfLongestSubstring2(String s) {
-        int count = 1;
-        int num = 1;
-        char[] ch = s.toCharArray();
-        ArrayList list = new ArrayList();
-        if (s.length() > 0) {
-            for (int i = 0; i < ch.length; i++) {
-                for (int j = 0; j < ch.length; j++) {
-                    list.add(ch[i]);
-                    if (!list.contains(ch[j])) {
-                        list.add(ch[j]);
-                        count++;
-                        num = (num > count ? num : count);
-                        System.out.println(num + "-");
-                    } else {
-                        num = (num > count ? num : count);
-                        list.clear();
-                        count = 1;
-                    }
-                }
+        int num = 0, i = 0, j = 0;
+        Set<Character> list = new HashSet<>();
+        while (i < s.length() && j < s.length()) {
+            if (!list.contains(s.charAt(j))) {
+                list.add(s.charAt(j++));
+                num = Math.max(num, j - i);
+            } else {
+                list.remove(s.charAt(i++));
             }
-        } else
-            num = 0;
+        }
         return num;
+    }
+
+    public static int lengthOfLongestSubstring3(String s) {
+        int result = 0;
+
+        return result;
     }
 }
 

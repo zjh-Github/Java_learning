@@ -1,5 +1,8 @@
 package test;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -14,6 +17,14 @@ public class Main {
         System.out.println(queue.poll());
         System.out.println(queue.poll());
         System.out.println(queue.poll());
+
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        Calendar now = Calendar.getInstance();
+
+        Date date = now.getTime();
+        //发放时间月份
+        String putoutMonth = simpleDateFormat.format(date);
+        System.out.println("date:" + putoutMonth);
     }
 
 }
