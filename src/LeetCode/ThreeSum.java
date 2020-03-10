@@ -8,9 +8,10 @@ public class ThreeSum {
         //-1, 0, 1, 2, -1, -4
         //0,0,0,0
         //-4,-2,-2,-2,0,1,2,2,2,3,3,4,4,6,6
+        //[-4,-2,-2,-2,0,1,2,2,2,3,3,4,4,6,6]
         //-4,-2,1,-5,-4,-4,4,-2,0,4,0,-2,3,1,-5,0
         //
-        System.out.println(threeSum1(new int[]{-4, -2, 1, -5, -4, -4, 4, -2, 0, 4, 0, -2, 3, 1, -5, 0}));
+        System.out.println(threeSum(new int[]{-4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6}));
 
 /*//        System.out.println(test(new int[]{1, 2, 3, 4, 1, 1, 1, 3, 4, 6, 7, 8, 9, 6}));
         ArrayList<Integer> listA = new ArrayList<>();
@@ -35,33 +36,32 @@ public class ThreeSum {
         if (len < 3) {
             return list;
         }
-        for (int i = 0; i < len; i++) {
+        Arrays.sort(nums);
+        for (int i = 0; i < len - 2; i++) {
             int first = i + 1;
-            while (first < len) {
-                int second = first + 1;
-                while (second < len) {
-                    if (nums[i] + nums[first] + nums[second] == 0) {
-                        tempList = new ArrayList<>();
-                        tempList.add(nums[i]);
-                        tempList.add(nums[first]);
-                        tempList.add(nums[second]);
-                        list.add(tempList);
-                    }
-                    second++;
+            int second = first + 1;
+            while (first < second) {
+                if (second == nums.length) {
+                    first++;
+                    second = first + 1;
                 }
-                first++;
+                if (nums[i] + nums[first] + nums[second] == 0) {
+                    tempList = new ArrayList<>();
+                    tempList.add(nums[i]);
+                    tempList.add(nums[first]);
+                    tempList.add(nums[second]);
+                    list.add(tempList);
+
+                }
+                second++;
+
+                if (first == nums.length - 2) {
+                    break;
+                }
+
             }
         }
-        System.out.println(list);
-        for (int i = 0; i < list.size(); i++) {
-            for (int j = list.size() - 1; j > i; j--) {
-                System.out.println("i:" + list.get(i));
-                if (list.get(i).containsAll(list.get(j)) && i != j) {
-                    System.out.println("j:" + list.get((j)));
-                    list.remove(j);
-                }
-            }
-        }
+
         return list;
     }
 
