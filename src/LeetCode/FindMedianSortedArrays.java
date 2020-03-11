@@ -6,6 +6,10 @@ import java.util.Collections;
 import java.util.List;
 
 public class FindMedianSortedArrays {
+    /**
+     * 已完成
+     *
+     */
     public static void main(String[] args) {
         System.out.println(findMedianSortedArrays4(new int[]{1, 2}, new int[]{3, 4}));
     }
@@ -135,10 +139,10 @@ public class FindMedianSortedArrays {
             array[nums1.length + i] = nums2[i];
         }*/
         for (int i = 0; i < array.length; i++) {
-            if (i< nums1.length)
+            if (i < nums1.length)
                 array[i] = nums1[i];
             if (i >= nums1.length)
-                array[i] = nums2[i-nums1.length];
+                array[i] = nums2[i - nums1.length];
         }
         Arrays.sort(array);
         if (array.length % 2 == 0) {
@@ -153,10 +157,10 @@ public class FindMedianSortedArrays {
     public static double findMedianSortedArrays4(int[] nums1, int[] nums2) {
         double[] array = new double[nums1.length + nums2.length];
         for (int i = 0; i < array.length; i++) {
-            if (i< nums1.length)
+            if (i < nums1.length)
                 array[i] = nums1[i];
             if (i >= nums1.length)
-                array[i] = nums2[i-nums1.length];
+                array[i] = nums2[i - nums1.length];
         }
         Arrays.sort(array);
         if (array.length % 2 == 0) {

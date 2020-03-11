@@ -4,7 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MyAtoi {
-
+    /**
+     * 已完成
+     *
+     */
     public static void main(String[] args) {
         System.out.println(Integer.MAX_VALUE + "、" + Integer.MIN_VALUE);
         System.out.println(myAtoi("2000000000000000000000000000000"));

@@ -4,6 +4,10 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class MaxArea {
+    /**
+     * 已完成
+     *
+     */
     public static void main(String[] args) {
         System.out.println(maxArea(new int[]{1, 10, 6, 2, 5, 4, 10, 3, 9}));
     }

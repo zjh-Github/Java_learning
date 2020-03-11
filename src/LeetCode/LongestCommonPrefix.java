@@ -1,6 +1,10 @@
 package LeetCode;
 
 public class LongestCommonPrefix {
+    /**
+     * 已完成
+     *
+     */
     public static void main(String[] args) {
         //"dog","racecar","car"
         //"flower", "flow", "flight"

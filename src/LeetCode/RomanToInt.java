@@ -2,6 +2,10 @@ package LeetCode;
 import java.util.HashMap;
 
 public class RomanToInt {
+    /**
+     * 已完成
+     *
+     */
     public static int romanToInt(String s) {
         int len = s.length();
         int result = 0;

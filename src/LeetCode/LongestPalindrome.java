@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LongestPalindrome {
-
+    /**
+     * 已完成
+     *
+     */
     public static void main(String[] args) {
 
         System.out.println(longestPalindrome2(" s fd af s hda "));

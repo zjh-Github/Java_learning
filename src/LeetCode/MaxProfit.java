@@ -9,6 +9,10 @@ public class MaxProfit {
     * 如果你最多只允许完成一笔交易（即买入和卖出一支股票），设计一个算法来计算你所能获取的最大利润。
     * 注意你不能在买入股票前卖出股票。
     * */
+    /**
+     * 已完成
+     *
+     */
     public static int maxProfit(int[] prices) {
         int len = prices.length;
         int result = 0;

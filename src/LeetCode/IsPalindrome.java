@@ -1,6 +1,10 @@
 package LeetCode;
 
 public class IsPalindrome {
+    /**
+     * 已完成
+     *
+     */
     public static void main(String[] args) {
         System.out.println(isPalindrome(-121));
     }

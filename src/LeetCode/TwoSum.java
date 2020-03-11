@@ -3,6 +3,9 @@ package LeetCode;
 import java.util.*;
 
 public class TwoSum {
+    /**
+     * 已完成
+     */
     public static void main(String[] args) throws Exception {
         int[] array = {2, 7, 11, 15};
 //        System.out.println(twoSum(array,9));

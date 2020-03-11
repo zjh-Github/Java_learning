@@ -3,6 +3,9 @@ package LeetCode;
 import java.util.*;
 
 public class LengthOfLongestSubstring {
+    /**
+    * 已完成
+    */
     public static void main(String[] args) {
         System.out.println(lengthOfLongestSubstring2("bbbbbbbbbbbb"));
     }

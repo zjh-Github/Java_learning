@@ -1,11 +1,5 @@
 package LeetCode;
 
-import org.omg.PortableInterceptor.INACTIVE;
-import org.omg.PortableInterceptor.IORInterceptor;
-
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
 
 public class AddTwoNumbers {
     public static class ListNode {
@@ -16,7 +10,10 @@ public class AddTwoNumbers {
             val = x;
         }
     }
-
+    /**
+     * 已完成
+     *
+     */
     public static void main(String[] args) {
 
     }
