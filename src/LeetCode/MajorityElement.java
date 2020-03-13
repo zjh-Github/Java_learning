@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class MajorityElement {
     /**
-     *
      * 以完成
+     *
      */
     public static int majorityElement(int[] nums) {
         int count = 0;
