@@ -33,7 +33,7 @@ public class ExportExcel {
     private static final String XLSX = "xlsx";
 
     public static void main(String[] args) {
-        String excelName = "C:\\Users\\zjh\\Desktop\\data\\珠海更改银行派单客户经理1227.xlsx";
+        String excelName = "excel表路径";
         System.out.println(readExcel(excelName));
     }
 
