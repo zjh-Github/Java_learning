@@ -1,6 +1,10 @@
 package LeetCode;
 
 public class RemoveNthFromEnd {
+    /**
+     *
+     * 已完成
+     */
     public static class ListNode {
         int val;
         ListNode next;
@@ -17,17 +21,19 @@ public class RemoveNthFromEnd {
     public static ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode listNode = new ListNode(0);
         listNode.next = head;
-        ListNode list = listNode;
-        for (int i = 0; i < n; i++) {
-            list = list.next;
+        ListNode temp = head;
+        int size = 0;
+        while (temp != null) {
+            size++;
+            temp = temp.next;
         }
-        while (listNode.next != null) {
-            if (listNode.next.val != n) {
-                listNode.next = head.next;
-            } else {
-                listNode.next = head.next.next;
-            }
+        temp = listNode;
+        size -= n;
+        while (size > 0) {
+            size--;
+            temp = temp.next;
         }
-        return listNode;
+        temp.next = temp.next.next;
+        return listNode.next;
     }
 }
