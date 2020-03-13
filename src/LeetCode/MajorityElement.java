@@ -3,7 +3,10 @@ package LeetCode;
 import java.util.Arrays;
 
 public class MajorityElement {
-
+    /**
+     *
+     * 以完成
+     */
     public static int majorityElement(int[] nums) {
         int count = 0;
         int result = 0;
