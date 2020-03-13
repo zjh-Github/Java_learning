@@ -15,10 +15,19 @@ public class RemoveNthFromEnd {
     }
 
     public static ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode listNode = new ListNode(1);
-        ListNode list = listNode.next;
-
-
-        return list;
+        ListNode listNode = new ListNode(0);
+        listNode.next = head;
+        ListNode list = listNode;
+        for (int i = 0; i < n; i++) {
+            list = list.next;
+        }
+        while (listNode.next != null) {
+            if (listNode.next.val != n) {
+                listNode.next = head.next;
+            } else {
+                listNode.next = head.next.next;
+            }
+        }
+        return listNode;
     }
 }
