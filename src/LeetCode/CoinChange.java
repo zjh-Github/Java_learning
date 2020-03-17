@@ -26,13 +26,13 @@ public class CoinChange {
 
     }
 
-    public static int coinCh(int[] coins, int amount,int size) {
+    public static int coinCh(int[] coins, int amount, int size) {
         int temp = 0;
         int result = 0;
         int count = 0;
         Arrays.sort(coins);
-        while ( size > 0) {
-            for (int i = size-1; i >= 0; ) {
+        while (size > 0) {
+            for (int i = size - 1; i >= 0; ) {
                 if (amount > temp) {
                     temp += coins[i];
                     count++;
@@ -62,6 +62,6 @@ public class CoinChange {
          * */
         int[] array = {186, 419, 83, 408};
         int count = 6249;
-        System.out.println(coinCh(array, count,array.length));
+        System.out.println(coinCh(array, count, array.length));
     }
 }

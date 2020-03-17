@@ -1,15 +1,7 @@
 package LeetCode;
 
-
+import LeetCode.PublicListNode.ListNode;
 public class AddTwoNumbers {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
     /**
      * 已完成
      *

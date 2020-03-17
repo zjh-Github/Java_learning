@@ -1,18 +1,10 @@
 package LeetCode;
-
+import LeetCode.PublicListNode.ListNode;
 public class RemoveNthFromEnd {
     /**
      *
      * 已完成
      */
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public static void main(String[] args) {
         System.out.println(removeNthFromEnd(new ListNode(1), 3));
