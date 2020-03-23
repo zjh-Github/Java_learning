@@ -6,7 +6,7 @@ import java.util.List;
 public class LongestPalindrome {
     /**
      * 已完成
-     *
+     * 最长回文子串
      */
     public static void main(String[] args) {
 

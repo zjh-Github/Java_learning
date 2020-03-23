@@ -2,33 +2,26 @@ package LeetCode;
 
 import LeetCode.PublicListNode.ListNode;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 public class SwapPairs {
 
     public static ListNode swapPairs(ListNode head) {
         ListNode listNode = new ListNode(0);
-        ListNode temp = listNode;
-        ListNode res = new ListNode(0);
-        if (head == null) {
-            return listNode.next;
+        listNode.next = head;
+        ListNode res = listNode;
+        if (head == null || head.next == null) {
+            return head;
         }
-        while (head != null) {
-            if (head.next != null) {
-                temp.next = head.next;
-                temp = temp.next;
-                res.next = head;
-                res = res.next;
-                System.out.println("temp:" + temp.val);
-                System.out.println("res:" + res.val);
-                System.out.println("head.next:" + head.next.val);
-                System.out.println("head:" + head.val);
-                if (head.next.next != null) {
-                    head = head.next.next;
-                } else {
-                    head = head.next;
-                }
-            } else {
-                head = head.next;
-            }
+        while (head != null && head.next != null) {
+            ListNode l1 = head;
+            listNode.next = head.next;
+            res.next = l1;
+            res = res.next;
+            listNode = listNode.next;
+            head = head.next.next;
         }
         return listNode.next;
     }
